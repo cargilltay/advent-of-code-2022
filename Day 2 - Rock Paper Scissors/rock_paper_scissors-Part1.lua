@@ -17,22 +17,14 @@ local defs =
 }
 
 local function rps (you, i)
-    local win = 6
-    local draw = 3
-    local loss = 0
-
     local total = 0
 
     if you == i then
-        total = draw
-    elseif you == 's' and i == 'r' then
-        total = win
-    elseif you == 'r' and i == 'p' then
-        total = win
-    elseif you == 'p' and i == 's' then
-        total = win
+        total = 3
+    elseif (you == 's' and i == 'r') or (you == 'r' and i == 'p') or (you == 'p' and i == 's') then 
+        total = 6
     else
-        total = loss
+        total = 0
     end
 
     total = total + defs[i]

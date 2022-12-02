@@ -17,10 +17,6 @@ local defs =
 }
 
 local function rps(i, originalI)
-    local win = 6
-    local draw = 3
-    local loss = 0
-
     local cheatSheet = {X = 0, Y = 3, Z = 6}
 
     total = cheatSheet[originalI] + defs[i]
