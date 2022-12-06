@@ -46,11 +46,6 @@ local function intersect(m,n)
     return r
 end
 
-local function toTable(str) 
-    return str:gsub(".",function(c) table.insert(t,c) end)
-end
-
-
 local function rr(line) 
     local len = string.len(line)
 
